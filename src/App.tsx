@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import bg_image1 from './util/assets/bg_image1.jpg'
+import bg_image2 from './util/assets/bg_image2.jpg'
+import bg_image3 from './util/assets/bg_image3.jpg'
+
+import { Route, Routes } from 'react-router-dom'
+import Login from './components/login';
+import Signup from './components/signup';
+import Home from './components/home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div id='app' className='bg-gray-300 flex items-center justify-center'>
+      <Routes>
+        <Route element={<Login />} path='login' />
+        <Route element={<Signup />} path='signup' />
+        <Route element={<Home />} path='' />
+      </Routes>
+    </div >
   );
 }
 
