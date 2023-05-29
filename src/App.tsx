@@ -10,9 +10,6 @@ import Home from './components/home';
 function App() {
   return (
     <div id='app' className='bg-gray-300 flex items-center justify-center'>
-      <div>
-        <Link to={'/login'}>Login</Link>
-      </div>
       <Routes>
         <Route element={<Login />} path='/login' />
         <Route element={<Signup />} path='/signup' />
