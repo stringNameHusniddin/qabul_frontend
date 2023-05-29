@@ -11,8 +11,8 @@ function App() {
   return (
     <div id='app' className='bg-gray-300 flex items-center justify-center'>
       <Routes>
-        <Route element={<Login />} path='login' />
-        <Route element={<Signup />} path='signup' />
+        <Route element={<Login />} path='/login' />
+        <Route element={<Signup />} path='/signup' />
         <Route element={<Home />} path='' />
       </Routes>
     </div >
